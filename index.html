@@ -10,6 +10,9 @@
 *{
   box-sizing: border-box;
 }
+p, div, h2{
+  overflow-wrap: break-word;
+}
 body{
   overflow-x:hidden;
 }
@@ -66,8 +69,8 @@ body{
   background-color: aliceblue;
   margin:4px;
   padding:30px;        /* space inside the box */
-  min-height:220px;
-  word-wrap:break-word;    /* makes the boxes taller */
+  word-wrap:break-word;
+  height:auto;    /* makes the boxes taller */
 }
 .learners:hover,
 .sporty:hover,
@@ -97,7 +100,7 @@ body{
   background-color: aliceblue;
   margin:4px;
   padding:30px;        /* space inside the box */
-  min-height:220px; 
+  height: auto;
 }
 .results:hover,
 .song:hover,
