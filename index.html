@@ -243,6 +243,79 @@ body{
     text-align:center;
   }
 }
+.notices{
+    background-color:#f5f7fa;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.notices h2{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#333;
+    font-weight:700;
+}
+
+.notices ul{
+    list-style:none;
+    padding:0;
+    margin:auto;
+    max-width:700px;
+}
+
+.notices li{
+    background:white;
+    margin:12px 0;
+    padding:16px 20px;
+    border-radius:8px;
+    text-align:left;
+    font-size:1.05rem;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notices li:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px){
+
+    .notices{
+        padding:50px 15px;
+    }
+
+    .notices h2{
+        font-size:1.7rem;
+    }
+
+    .notices li{
+        font-size:1rem;
+        padding:14px 16px;
+    }
+}
+
+/* 📱 Small phones */
+@media (max-width: 480px){
+
+    .notices{
+        padding:40px 12px;
+    }
+
+    .notices h2{
+        font-size:1.5rem;
+    }
+
+    .notices li{
+        font-size:0.95rem;
+        padding:12px 14px;
+    }
+
+}
+.notices li::before{
+    content:"📢 ";
+}
 
 </style>
 </head>
@@ -275,7 +348,8 @@ body{
     <div class="hero-sub">Where discipline meets education</div>
   </div>
 </div>
-
+<!--notices-->
+<section class="notices"> <h2>Latest Notices</h2> <ul> <li>Annual Sports Day – March 28</li> <li>Class 10 Board Exam Guidelines</li> <li>Admission Forms Available</li> <li>Parent Teacher Meeting Schedule</li> </ul> </section>
 </div>
 <!--About us-->
 <h4 class = "auh">About Us</h4>
